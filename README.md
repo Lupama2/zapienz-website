@@ -1,4 +1,4 @@
-# Zapienz — Company Website
+# Zapienz — Company Website.
 
 **Company:** Socrates AI | **Product:** Zapienz — Artificial intelligence for kids  
 **Website domain:** `https://www.zapienz.app`  
