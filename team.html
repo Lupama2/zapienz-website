@@ -26,6 +26,8 @@
       }
     }
   </script>
+  <link rel="alternate" hreflang="en" href="team.html" />
+  <link rel="alternate" hreflang="es" href="es/team.html" />
   <style>
     body { font-family: 'Inter', sans-serif; color: #2D2D2D; }
     h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; }
@@ -76,6 +78,9 @@
       object-fit: cover;
       object-position: center top;
     }
+    .lang-switcher { display: inline-flex; align-items: center; gap: 4px; font-size: 0.75rem; font-weight: 600; color: #6b7280; border: 1.5px solid #e5e7eb; border-radius: 999px; padding: 3px 10px; transition: border-color 0.2s, color 0.2s; }
+    .lang-switcher:hover { border-color: #1B2F6E; color: #1B2F6E; }
+    .lang-switcher .active-lang { color: #1B2F6E; font-weight: 700; }
   </style>
 </head>
 <body class="bg-white font-body">
@@ -98,10 +103,13 @@
         <li><a href="contact.html"  class="nav-link">Contact</a></li>
       </ul>
 
-      <a href="contact.html"
-         class="hidden md:inline-flex items-center gap-2 bg-brand text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-red-700 transition-colors">
-        Get in Touch
-      </a>
+      <div class="hidden md:flex items-center gap-3">
+        <a href="es/team.html" class="lang-switcher" title="Ver en español"><span class="active-lang">EN</span> / ES</a>
+        <a href="contact.html"
+           class="inline-flex items-center gap-2 bg-brand text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-red-700 transition-colors">
+          Get in Touch
+        </a>
+      </div>
 
       <button id="menu-btn" class="md:hidden p-2 rounded text-navy" aria-label="Open menu">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">

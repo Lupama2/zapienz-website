@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — Zapienz by Socrates AI</title>
-  <meta name="description" content="Get in touch with the Zapienz team. Partnerships, press, investment enquiries, or just to say hello — we'd love to hear from you." />
+  <title>Contacto — Zapienz de Socrates AI</title>
+  <meta name="description" content="Contactate con el equipo de Zapienz. Alianzas, prensa, consultas de inversión, o simplemente para saludar — nos encantaría saber de vos." />
+  <link rel="alternate" hreflang="en" href="../contact.html" />
+  <link rel="alternate" hreflang="es" href="contact.html" />
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -12,75 +14,23 @@
     tailwind.config = {
       theme: {
         extend: {
-          colors: {
-            navy:  '#1B2F6E',
-            brand: '#E8323C',
-            sky:   '#6BB8E8',
-            light: '#F5F7FB',
-          },
-          fontFamily: {
-            heading: ['Poppins', 'sans-serif'],
-            body:    ['Inter', 'sans-serif'],
-          }
+          colors: { navy: '#1B2F6E', brand: '#E8323C', sky: '#6BB8E8', light: '#F5F7FB' },
+          fontFamily: { heading: ['Poppins', 'sans-serif'], body: ['Inter', 'sans-serif'] }
         }
       }
     }
   </script>
-  <link rel="alternate" hreflang="en" href="contact.html" />
-  <link rel="alternate" hreflang="es" href="es/contact.html" />
   <style>
     body { font-family: 'Inter', sans-serif; color: #2D2D2D; }
     h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; }
-
-    .hero-gradient {
-      background: linear-gradient(135deg, #1B2F6E 0%, #0f1f4a 60%, #1a3a7a 100%);
-    }
-    .nav-link {
-      position: relative;
-      transition: color 0.2s;
-    }
-    .nav-link::after {
-      content: '';
-      position: absolute;
-      bottom: -2px; left: 0; right: 0;
-      height: 2px;
-      background: #E8323C;
-      transform: scaleX(0);
-      transition: transform 0.2s;
-    }
-    .nav-link:hover::after,
-    .nav-link.active::after { transform: scaleX(1); }
+    .hero-gradient { background: linear-gradient(135deg, #1B2F6E 0%, #0f1f4a 60%, #1a3a7a 100%); }
+    .nav-link { position: relative; transition: color 0.2s; }
+    .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 2px; background: #E8323C; transform: scaleX(0); transition: transform 0.2s; }
+    .nav-link:hover::after, .nav-link.active::after { transform: scaleX(1); }
     .nav-link.active { color: #1B2F6E; font-weight: 600; }
-
-    .section-badge {
-      display: inline-block;
-      background: #EEF2FF;
-      color: #1B2F6E;
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 4px 14px;
-      border-radius: 999px;
-      margin-bottom: 12px;
-    }
-
-    .form-input {
-      width: 100%;
-      padding: 0.75rem 1rem;
-      border: 1.5px solid #e5e7eb;
-      border-radius: 0.75rem;
-      font-family: 'Inter', sans-serif;
-      font-size: 0.875rem;
-      color: #2D2D2D;
-      background: white;
-      transition: border-color 0.2s, box-shadow 0.2s;
-      outline: none;
-    }
-    .form-input:focus {
-      border-color: #1B2F6E;
-      box-shadow: 0 0 0 3px rgba(27, 47, 110, 0.08);
-    }
+    .section-badge { display: inline-block; background: #EEF2FF; color: #1B2F6E; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 14px; border-radius: 999px; margin-bottom: 12px; }
+    .form-input { width: 100%; padding: 0.75rem 1rem; border: 1.5px solid #e5e7eb; border-radius: 0.75rem; font-family: 'Inter', sans-serif; font-size: 0.875rem; color: #2D2D2D; background: white; transition: border-color 0.2s, box-shadow 0.2s; outline: none; }
+    .form-input:focus { border-color: #1B2F6E; box-shadow: 0 0 0 3px rgba(27, 47, 110, 0.08); }
     .form-input::placeholder { color: #9ca3af; }
     label { display: block; font-size: 0.8rem; font-weight: 600; color: #1B2F6E; margin-bottom: 6px; }
     .lang-switcher { display: inline-flex; align-items: center; gap: 4px; font-size: 0.75rem; font-weight: 600; color: #6b7280; border: 1.5px solid #e5e7eb; border-radius: 999px; padding: 3px 10px; transition: border-color 0.2s, color 0.2s; }
@@ -90,81 +40,62 @@
 </head>
 <body class="bg-white font-body">
 
-  <!-- ═══════════════════════════════════════
-       NAVIGATION
-  ═══════════════════════════════════════ -->
+  <!-- NAVEGACIÓN -->
   <nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
     <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
-
       <a href="index.html" class="flex items-center gap-2">
-        <img src="assets/images/logo.png" alt="Zapienz logo" class="h-12 w-auto" />
+        <img src="../assets/images/logo.png" alt="Zapienz logo" class="h-12 w-auto" />
       </a>
-
       <ul class="hidden md:flex items-center gap-8 text-sm text-gray-600">
-        <li><a href="index.html"    class="nav-link">Home</a></li>
-        <li><a href="about.html"    class="nav-link">About</a></li>
-        <li><a href="features.html" class="nav-link">Features</a></li>
-        <li><a href="team.html"     class="nav-link">Team</a></li>
-        <li><a href="contact.html"  class="nav-link active">Contact</a></li>
+        <li><a href="index.html"    class="nav-link">Inicio</a></li>
+        <li><a href="about.html"    class="nav-link">Nosotros</a></li>
+        <li><a href="features.html" class="nav-link">Funcionalidades</a></li>
+        <li><a href="team.html"     class="nav-link">Equipo</a></li>
+        <li><a href="contact.html"  class="nav-link active">Contacto</a></li>
       </ul>
-
       <div class="hidden md:flex items-center gap-3">
-        <a href="es/contact.html" class="lang-switcher" title="Ver en español"><span class="active-lang">EN</span> / ES</a>
-        <a href="contact.html" class="inline-flex items-center gap-2 bg-brand text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-red-700 transition-colors">Get in Touch</a>
+        <a href="../contact.html" class="lang-switcher" title="Switch to English">EN / <span class="active-lang">ES</span></a>
+        <a href="contact.html" class="inline-flex items-center gap-2 bg-brand text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-red-700 transition-colors">Contáctanos</a>
       </div>
-
-      <button id="menu-btn" class="md:hidden p-2 rounded text-navy" aria-label="Open menu">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
+      <button id="menu-btn" class="md:hidden p-2 rounded text-navy" aria-label="Abrir menú">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
-
     <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-3 text-sm text-gray-700">
-      <a href="index.html"    class="block hover:text-navy">Home</a>
-      <a href="about.html"    class="block hover:text-navy">About</a>
-      <a href="features.html" class="block hover:text-navy">Features</a>
-      <a href="team.html"     class="block hover:text-navy">Team</a>
-      <a href="contact.html"  class="block font-semibold text-navy">Contact</a>
-      <a href="contact.html"  class="inline-block mt-2 bg-brand text-white px-5 py-2 rounded-full font-semibold">Get in Touch</a>
+      <a href="index.html"    class="block hover:text-navy">Inicio</a>
+      <a href="about.html"    class="block hover:text-navy">Nosotros</a>
+      <a href="features.html" class="block hover:text-navy">Funcionalidades</a>
+      <a href="team.html"     class="block hover:text-navy">Equipo</a>
+      <a href="contact.html"  class="block font-semibold text-navy">Contacto</a>
+      <a href="../contact.html" class="block text-gray-400 text-xs hover:text-navy">🌐 View in English</a>
+      <a href="contact.html"  class="inline-block mt-2 bg-brand text-white px-5 py-2 rounded-full font-semibold">Contáctanos</a>
     </div>
   </nav>
 
 
-  <!-- ═══════════════════════════════════════
-       HERO
-  ═══════════════════════════════════════ -->
+  <!-- HERO -->
   <section class="hero-gradient pt-28 pb-16 px-6 text-white overflow-hidden relative">
     <div class="absolute top-10 right-10 w-64 h-64 rounded-full opacity-10" style="background: #6BB8E8;"></div>
     <div class="absolute bottom-0 left-0 w-40 h-40 rounded-full opacity-10" style="background: #E8323C;"></div>
-
     <div class="max-w-6xl mx-auto relative z-10 text-center">
-      <span class="inline-block bg-white/10 text-sky text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">
-        Contact Us
-      </span>
-      <h1 class="font-heading text-4xl md:text-5xl font-bold leading-tight mb-5">
-        Let's Talk.
-      </h1>
+      <span class="inline-block bg-white/10 text-sky text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">Contactanos</span>
+      <h1 class="font-heading text-4xl md:text-5xl font-bold leading-tight mb-5">Hablemos.</h1>
       <p class="text-white/80 text-lg leading-relaxed max-w-xl mx-auto">
-        Whether you're a parent, school, investor, or potential partner — we'd love to hear from you.
-        Reach out and our team will get back to you promptly.
+        Ya seas padre, escuela, inversor o potencial socio — nos encantaría escucharte.
+        Escribinos y nuestro equipo te responderá a la brevedad.
       </p>
     </div>
   </section>
 
 
-  <!-- ═══════════════════════════════════════
-       CONTACT MAIN — info + form
-  ═══════════════════════════════════════ -->
+  <!-- CONTACTO PRINCIPAL — info + formulario -->
   <section class="bg-light py-20 px-6">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
 
-      <!-- LEFT: Contact info -->
+      <!-- IZQUIERDA: Información de contacto -->
       <div>
-        <span class="section-badge">Reach Us</span>
-        <h2 class="font-heading text-2xl md:text-3xl font-bold text-navy mb-8">
-          We're here to help.
-        </h2>
+        <span class="section-badge">Encontranos</span>
+        <h2 class="font-heading text-2xl md:text-3xl font-bold text-navy mb-8">Estamos para ayudarte.</h2>
 
         <div class="space-y-6">
 
@@ -187,7 +118,7 @@
               </svg>
             </div>
             <div>
-              <p class="font-semibold text-navy text-sm mb-1">Phone</p>
+              <p class="font-semibold text-navy text-sm mb-1">Teléfono</p>
               <a href="tel:+5491161112369" class="text-gray-600 hover:text-navy transition-colors">+54 9 11 6111 2369</a>
             </div>
           </div>
@@ -200,8 +131,7 @@
             </div>
             <div>
               <p class="font-semibold text-navy text-sm mb-1">WhatsApp</p>
-              <a href="https://wa.me/5491161112369" target="_blank" rel="noopener"
-                 class="text-gray-600 hover:text-navy transition-colors">+54 9 11 6111 2369</a>
+              <a href="https://wa.me/5491161112369" target="_blank" rel="noopener" class="text-gray-600 hover:text-navy transition-colors">+54 9 11 6111 2369</a>
             </div>
           </div>
 
@@ -213,7 +143,7 @@
               </svg>
             </div>
             <div>
-              <p class="font-semibold text-navy text-sm mb-1">Address</p>
+              <p class="font-semibold text-navy text-sm mb-1">Dirección</p>
               <p class="text-gray-600">Virrey del Pino 2166<br/>C.A.B.A., Buenos Aires, Argentina</p>
             </div>
           </div>
@@ -226,14 +156,13 @@
             </div>
             <div>
               <p class="font-semibold text-navy text-sm mb-1">LinkedIn</p>
-              <a href="https://linkedin.com/in/feradria" target="_blank" rel="noopener"
-                 class="text-gray-600 hover:text-navy transition-colors">Adrian Fernandez — linkedin.com/in/feradria</a>
+              <a href="https://linkedin.com/in/feradria" target="_blank" rel="noopener" class="text-gray-600 hover:text-navy transition-colors">Adrian Fernandez — linkedin.com/in/feradria</a>
             </div>
           </div>
 
         </div>
 
-        <!-- Location card -->
+        <!-- Tarjeta de ubicación -->
         <div class="mt-10 bg-navy text-white rounded-2xl p-6">
           <div class="flex items-center gap-3 mb-3">
             <svg class="w-5 h-5 text-sky flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -242,66 +171,64 @@
             <span class="font-heading font-semibold text-sm">Buenos Aires, Argentina</span>
           </div>
           <p class="text-white/60 text-sm leading-relaxed">
-            Socrates AI is headquartered in Buenos Aires. We're currently deploying Zapienz first in
-            Argentina, then across Latin America, and ultimately worldwide.
+            Socrates AI tiene su sede en Buenos Aires. Actualmente estamos desplegando Zapienz primero en
+            Argentina, luego en toda América Latina y finalmente en todo el mundo.
           </p>
-          <p class="text-white/40 text-xs mt-3">
-            www.zapienz.app
-          </p>
+          <p class="text-white/40 text-xs mt-3">www.zapienz.app</p>
         </div>
       </div>
 
 
-      <!-- RIGHT: Contact form -->
+      <!-- DERECHA: Formulario de contacto -->
       <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
-        <h2 class="font-heading text-2xl font-bold text-navy mb-2">Send us a message</h2>
-        <p class="text-gray-500 text-sm mb-7">We'll get back to you within one business day.</p>
+        <h2 class="font-heading text-2xl font-bold text-navy mb-2">Envianos un mensaje</h2>
+        <p class="text-gray-500 text-sm mb-7">Te responderemos dentro de un día hábil.</p>
 
-        <!-- Success message (shown after submission) -->
+        <!-- Mensaje de éxito (se muestra tras el envío) -->
         <div id="form-success" class="hidden text-center py-10">
           <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
             </svg>
           </div>
-          <h3 class="font-heading text-xl font-bold text-navy mb-2">Message sent!</h3>
-          <p class="text-gray-500 text-sm">Thanks for reaching out. We'll get back to you within one business day.</p>
+          <h3 class="font-heading text-xl font-bold text-navy mb-2">¡Mensaje enviado!</h3>
+          <p class="text-gray-500 text-sm">Gracias por escribirnos. Te responderemos dentro de un día hábil.</p>
         </div>
 
-        <form id="contact-form" name="contact" method="POST" action="/contact.html?success=true"
+        <form id="contact-form" name="contact-es" method="POST" action="/es/contact.html?success=true"
               data-netlify="true" class="space-y-5">
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value="contact-es" />
 
           <div class="grid sm:grid-cols-2 gap-5">
             <div>
-              <label for="name">Full Name</label>
-              <input id="name" name="name" type="text" required placeholder="Jane Smith" class="form-input" />
+              <label for="name">Nombre Completo</label>
+              <input id="name" name="name" type="text" required placeholder="Juan Pérez" class="form-input" />
             </div>
             <div>
-              <label for="email">Email Address</label>
-              <input id="email" name="email" type="email" required placeholder="jane@example.com" class="form-input" />
+              <label for="email">Correo Electrónico</label>
+              <input id="email" name="email" type="email" required placeholder="juan@ejemplo.com" class="form-input" />
             </div>
           </div>
 
           <div>
-            <label for="subject">Subject</label>
+            <label for="subject">Asunto</label>
             <select id="subject" name="subject" class="form-input" required>
-              <option value="" disabled selected>Select a topic…</option>
-              <option value="General inquiry">General inquiry</option>
-              <option value="Partnership">Partnership</option>
-              <option value="Press">Press</option>
-              <option value="Investment">Investment</option>
+              <option value="" disabled selected>Seleccioná un tema…</option>
+              <option value="Consulta general">Consulta general</option>
+              <option value="Alianza">Alianza</option>
+              <option value="Prensa">Prensa</option>
+              <option value="Inversión">Inversión</option>
             </select>
           </div>
 
           <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your inquiry…" class="form-input resize-none"></textarea>
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Contanos sobre tu consulta…" class="form-input resize-none"></textarea>
           </div>
 
           <button type="submit"
                   class="w-full bg-brand text-white font-semibold py-3 px-6 rounded-full hover:bg-red-700 transition-colors flex items-center justify-center gap-2">
-            Send Message
+            Enviar Mensaje
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
             </svg>
@@ -314,74 +241,57 @@
   </section>
 
 
-  <!-- ═══════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════ -->
+  <!-- PIE DE PÁGINA -->
   <footer class="bg-navy text-white py-14 px-6">
     <div class="max-w-6xl mx-auto">
       <div class="grid md:grid-cols-3 gap-10 pb-10 border-b border-white/10">
-
         <div>
-          <img src="assets/images/logo.png" alt="Zapienz" class="h-14 w-auto mb-4 brightness-0 invert" />
+          <img src="../assets/images/logo.png" alt="Zapienz" class="h-14 w-auto mb-4 brightness-0 invert" />
           <p class="text-white/60 text-sm leading-relaxed max-w-xs">
-            Zapienz is the first AI platform designed specifically for children ages 5–12,
-            with real-time parental controls and safety alerts.
+            Zapienz es la primera plataforma de IA diseñada específicamente para niños de 5 a 12 años,
+            con controles parentales en tiempo real y alertas de seguridad.
           </p>
         </div>
-
         <div>
-          <h5 class="font-heading font-semibold mb-4 text-sm tracking-wider uppercase text-white/50">Navigation</h5>
+          <h5 class="font-heading font-semibold mb-4 text-sm tracking-wider uppercase text-white/50">Navegación</h5>
           <ul class="space-y-2 text-sm text-white/70">
-            <li><a href="index.html"    class="hover:text-white transition-colors">Home</a></li>
-            <li><a href="about.html"    class="hover:text-white transition-colors">About Us</a></li>
-            <li><a href="features.html" class="hover:text-white transition-colors">Features</a></li>
-            <li><a href="team.html"     class="hover:text-white transition-colors">Our Team</a></li>
-            <li><a href="contact.html"  class="hover:text-white transition-colors">Contact</a></li>
+            <li><a href="index.html"    class="hover:text-white transition-colors">Inicio</a></li>
+            <li><a href="about.html"    class="hover:text-white transition-colors">Nosotros</a></li>
+            <li><a href="features.html" class="hover:text-white transition-colors">Funcionalidades</a></li>
+            <li><a href="team.html"     class="hover:text-white transition-colors">Nuestro Equipo</a></li>
+            <li><a href="contact.html"  class="hover:text-white transition-colors">Contacto</a></li>
+            <li><a href="../contact.html" class="hover:text-white transition-colors text-white/40 text-xs mt-2 block">🌐 English version</a></li>
           </ul>
         </div>
-
         <div>
-          <h5 class="font-heading font-semibold mb-4 text-sm tracking-wider uppercase text-white/50">Contact</h5>
+          <h5 class="font-heading font-semibold mb-4 text-sm tracking-wider uppercase text-white/50">Contacto</h5>
           <ul class="space-y-2 text-sm text-white/70">
             <li><a href="mailto:info@zapienz.app" class="hover:text-white transition-colors">info@zapienz.app</a></li>
             <li><span>+54 9 11 6111 2369</span></li>
             <li><span>Virrey del Pino 2166, C.A.B.A.</span></li>
             <li><span>Buenos Aires, Argentina</span></li>
-            <li class="pt-2">
-              <a href="https://linkedin.com/in/feradria" target="_blank" rel="noopener"
-                 class="hover:text-sky transition-colors">LinkedIn — Adrian Fernandez</a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/@ZapienzAI" target="_blank" rel="noopener"
-                 class="hover:text-sky transition-colors">YouTube — @ZapienzAI</a>
-            </li>
+            <li class="pt-2"><a href="https://linkedin.com/in/feradria" target="_blank" rel="noopener" class="hover:text-sky transition-colors">LinkedIn — Adrian Fernandez</a></li>
+            <li><a href="https://www.youtube.com/@ZapienzAI" target="_blank" rel="noopener" class="hover:text-sky transition-colors">YouTube — @ZapienzAI</a></li>
           </ul>
         </div>
-
       </div>
-
       <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-white/40 text-sm">
-        <p>© 2026 Socrates AI. All rights reserved.</p>
-        <p>Zapienz — Artificial intelligence for kids.</p>
+        <p>© 2026 Socrates AI. Todos los derechos reservados.</p>
+        <p>Zapienz — Inteligencia artificial para niños.</p>
       </div>
     </div>
   </footer>
-
 
   <script>
     const btn = document.getElementById('menu-btn');
     const menu = document.getElementById('mobile-menu');
     btn.addEventListener('click', () => menu.classList.toggle('hidden'));
-    menu.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => menu.classList.add('hidden'));
-    });
+    menu.querySelectorAll('a').forEach(a => { a.addEventListener('click', () => menu.classList.add('hidden')); });
 
-    // Show success state after Netlify form submission redirect
     if (new URLSearchParams(window.location.search).get('success') === 'true') {
       document.getElementById('contact-form').classList.add('hidden');
       document.getElementById('form-success').classList.remove('hidden');
     }
   </script>
-
 </body>
 </html>

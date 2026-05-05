@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuestro Equipo — Zapienz de Socrates AI</title>
+  <meta name="description" content="Conocé a los seis fundadores detrás de Zapienz — combinando profunda experiencia técnica, visión creativa y acumen empresarial para construir el futuro de la IA para niños." />
+  <link rel="alternate" hreflang="en" href="../team.html" />
+  <link rel="alternate" hreflang="es" href="team.html" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { navy: '#1B2F6E', brand: '#E8323C', sky: '#6BB8E8', light: '#F5F7FB' },
+          fontFamily: { heading: ['Poppins', 'sans-serif'], body: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; color: #2D2D2D; }
+    h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; }
+    .hero-gradient { background: linear-gradient(135deg, #1B2F6E 0%, #0f1f4a 60%, #1a3a7a 100%); }
+    .card-hover { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(27, 47, 110, 0.15); }
+    .nav-link { position: relative; transition: color 0.2s; }
+    .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 2px; background: #E8323C; transform: scaleX(0); transition: transform 0.2s; }
+    .nav-link:hover::after, .nav-link.active::after { transform: scaleX(1); }
+    .nav-link.active { color: #1B2F6E; font-weight: 600; }
+    .section-badge { display: inline-block; background: #EEF2FF; color: #1B2F6E; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 14px; border-radius: 999px; margin-bottom: 12px; }
+    .team-photo { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center top; }
+    .lang-switcher { display: inline-flex; align-items: center; gap: 4px; font-size: 0.75rem; font-weight: 600; color: #6b7280; border: 1.5px solid #e5e7eb; border-radius: 999px; padding: 3px 10px; transition: border-color 0.2s, color 0.2s; }
+    .lang-switcher:hover { border-color: #1B2F6E; color: #1B2F6E; }
+    .lang-switcher .active-lang { color: #1B2F6E; font-weight: 700; }
+  </style>
+</head>
+<body class="bg-white font-body">
+
+  <!-- NAVEGACIÓN -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="../assets/images/logo.png" alt="Zapienz logo" class="h-12 w-auto" />
+      </a>
+      <ul class="hidden md:flex items-center gap-8 text-sm text-gray-600">
+        <li><a href="index.html"    class="nav-link">Inicio</a></li>
+        <li><a href="about.html"    class="nav-link">Nosotros</a></li>
+        <li><a href="features.html" class="nav-link">Funcionalidades</a></li>
+        <li><a href="team.html"     class="nav-link active">Equipo</a></li>
+        <li><a href="contact.html"  class="nav-link">Contacto</a></li>
+      </ul>
+      <div class="hidden md:flex items-center gap-3">
+        <a href="../team.html" class="lang-switcher" title="Switch to English">EN / <span class="active-lang">ES</span></a>
+        <a href="contact.html" class="inline-flex items-center gap-2 bg-brand text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-red-700 transition-colors">Contáctanos</a>
+      </div>
+      <button id="menu-btn" class="md:hidden p-2 rounded text-navy" aria-label="Abrir menú">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-3 text-sm text-gray-700">
+      <a href="index.html"    class="block hover:text-navy">Inicio</a>
+      <a href="about.html"    class="block hover:text-navy">Nosotros</a>
+      <a href="features.html" class="block hover:text-navy">Funcionalidades</a>
+      <a href="team.html"     class="block font-semibold text-navy">Equipo</a>
+      <a href="contact.html"  class="block hover:text-navy">Contacto</a>
+      <a href="../team.html"  class="block text-gray-400 text-xs hover:text-navy">🌐 View in English</a>
+      <a href="contact.html"  class="inline-block mt-2 bg-brand text-white px-5 py-2 rounded-full font-semibold">Contáctanos</a>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="hero-gradient pt-28 pb-16 px-6 text-white overflow-hidden relative">
+    <div class="absolute top-10 right-10 w-64 h-64 rounded-full opacity-10" style="background: #6BB8E8;"></div>
+    <div class="absolute bottom-0 left-0 w-40 h-40 rounded-full opacity-10" style="background: #E8323C;"></div>
+    <div class="max-w-6xl mx-auto relative z-10 text-center">
+      <span class="inline-block bg-white/10 text-sky text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">Las Personas</span>
+      <h1 class="font-heading text-4xl md:text-5xl font-bold leading-tight mb-5">
+        Conocé al Equipo Detrás de<br/><span class="text-sky">Zapienz.</span>
+      </h1>
+      <p class="text-white/80 text-lg leading-relaxed max-w-2xl mx-auto">
+        Seis mentes que combinan profunda experiencia técnica, visión creativa y acumen empresarial —
+        unidas por una sola misión: hacer que la IA sea segura y beneficiosa para cada niño.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- GRILLA DEL EQUIPO -->
+  <section class="bg-light py-20 px-6">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <span class="section-badge">Fundadores</span>
+      <h2 class="font-heading text-3xl md:text-4xl font-bold text-navy">Seis co-fundadores. Una visión compartida.</h2>
+    </div>
+
+    <div class="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Adrian Fernandez -->
+      <div class="bg-white rounded-2xl overflow-hidden card-hover border border-gray-100">
+        <div class="overflow-hidden h-64">
+          <img src="../assets/images/team/team-adrian-fernandez.png" alt="Adrian Fernandez — Fundador" class="team-photo h-64" />
+        </div>
+        <div class="p-7">
+          <span class="inline-block bg-navy/10 text-navy text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full mb-3">Fundador</span>
+          <h3 class="font-heading text-xl font-bold text-navy mb-1">Adrian Fernandez</h3>
+          <p class="text-sky text-sm font-semibold mb-3">Publicidad &amp; Dirección Creativa</p>
+          <p class="text-gray-500 text-sm leading-relaxed mb-5">
+            Director Creativo Publicitario con campañas premiadas para Nike, Heineken y Greenpeace.
+            Fundador de Look and Take, Go Power, Blue Media y Pinche Picante. Pionero en Web3 con
+            La Llama Pic NFT y Miloverso NFT.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="mailto:adrian@zapienz.app" class="flex items-center gap-1.5 text-xs text-gray-500 hover:text-navy transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              Email
+            </a>
+            <a href="https://linkedin.com/in/feradria" target="_blank" rel="noopener" class="flex items-center gap-1.5 text-xs text-gray-500 hover:text-navy transition-colors">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://x.com/feradria" target="_blank" rel="noopener" class="flex items-center gap-1.5 text-xs text-gray-500 hover:text-navy transition-colors">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              𝕏 @feradria
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pablo Chehade -->
+      <div class="bg-white rounded-2xl overflow-hidden card-hover border border-gray-100">
+        <div class="overflow-hidden h-64">
+          <img src="../assets/images/team/team-pablo-chehade.png" alt="Pablo Chehade — Co-Fundador" class="team-photo h-64" />
+        </div>
+        <div class="p-7">
+          <span class="inline-block bg-sky/20 text-navy text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full mb-3">Co-Fundador</span>
+          <h3 class="font-heading text-xl font-bold text-navy mb-1">Pablo Chehade</h3>
+          <p class="text-sky text-sm font-semibold mb-3">Doctor en Física · Ciencia de Datos · Ingeniería de IA</p>
+          <p class="text-gray-500 text-sm leading-relaxed mb-5">
+            Doctor en Física por el Instituto Balseiro. Máster en desarrollo de software y Modelos de Lenguaje
+            de Gran Escala (LLMs). Especialista en IA a escala, ingeniería de datos en inteligencia artificial y
+            física computacional.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="mailto:pablo.chehade@zapienz.app" class="flex items-center gap-1.5 text-xs text-gray-500 hover:text-navy transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              Email
+            </a>
+            <a href="https://www.linkedin.com/in/pablo-chehade/" target="_blank" rel="noopener" class="flex items-center gap-1.5 text-xs text-gray-500 hover:text-navy transition-colors">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agustin Mailing -->
+      <div class="bg-white rounded-2xl overflow-hidden card-hover border border-gray-100">
+        <div class="overflow-hidden h-64">
+          <img src="../assets/images/team/team-agustin-mailing.png" alt="Agustin Mailing — Co-Fundador" class="team-photo h-64" />
+        </div>
+        <div class="p-7">
+          <span class="inline-block bg-sky/20 text-navy text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full mb-3">Co-Fundador</span>
+          <h3 class="font-heading text-xl font-bold text-navy mb-1">Agustin Mailing</h3>
+          <p class="text-sky text-sm font-semibold mb-3">Ingeniería Electrónica · Ciencia de Datos · IA/ML</p>
+          <p class="text-gray-500 text-sm leading-relaxed mb-5">
+            Ingeniero electrónico con expertise en IT, Ciencia de Datos, redes neuronales e inteligencia
+            artificial. Productor científico y tecnológico del CONICET. Ganador del concurso Soluciones
+            Innovadoras del Banco Nación y Emprendé Conciencia en INVAP.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="mailto:agustin.mailing@zapienz.app" class="flex items-center gap-1.5 text-xs text-gray-500 hover:text-navy transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              Email
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Antonio Dell'Ossa -->
+      <div class="bg-white rounded-2xl overflow-hidden card-hover border border-gray-100">
+        <div class="overflow-hidden h-64">
+          <img src="../assets/images/team/team-antonio-dell-ossa.png" alt="Antonio Dell'Ossa — Co-Fundador" class="team-photo h-64" />
+        </div>
+        <div class="p-7">
+          <span class="inline-block bg-sky/20 text-navy text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full mb-3">Co-Fundador</span>
+          <h3 class="font-heading text-xl font-bold text-navy mb-1">Antonio Dell'Ossa</h3>
+          <p class="text-sky text-sm font-semibold mb-3">Doctor en Ing. Biomédica · Emprendedor</p>
+          <p class="text-gray-500 text-sm leading-relaxed mb-5">
+            Doctor en Ingeniería Biomédica y emprendedor tecnológico. Ganador del concurso Soluciones
+            Innovadoras del Banco Nación y Emprendé Conciencia en INVAP. Finalista en Naves 2024
+            con BioZolution (bioimpedancia aplicada con IA).
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="mailto:antonio.dellossa@zapienz.app" class="flex items-center gap-1.5 text-xs text-gray-500 hover:text-navy transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              Email
+            </a>
+            <a href="https://www.linkedin.com/in/antonio-dellosa/" target="_blank" rel="noopener" class="flex items-center gap-1.5 text-xs text-gray-500 hover:text-navy transition-colors">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- German Mailing -->
+      <div class="bg-white rounded-2xl overflow-hidden card-hover border border-gray-100">
+        <div class="overflow-hidden h-64">
+          <img src="../assets/images/team/team-german-mailing.png" alt="German Mailing — Co-Fundador" class="team-photo h-64" />
+        </div>
+        <div class="p-7">
+          <span class="inline-block bg-sky/20 text-navy text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full mb-3">Co-Fundador</span>
+          <h3 class="font-heading text-xl font-bold text-navy mb-1">German Mailing</h3>
+          <p class="text-sky text-sm font-semibold mb-3">Ciencia de Datos Senior · Machine Learning · IA</p>
+          <p class="text-gray-500 text-sm leading-relaxed mb-5">
+            Data Scientist Senior con expertise en algoritmos, programación Python y SQL en múltiples
+            plataformas (Oracle, MS, MariaDB, Google BigQuery, Snowflake). Especialista en machine
+            learning e IA. Ex Globant.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="mailto:german.mailing@zapienz.app" class="flex items-center gap-1.5 text-xs text-gray-500 hover:text-navy transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              Email
+            </a>
+            <a href="https://www.linkedin.com/in/germanmailing/" target="_blank" rel="noopener" class="flex items-center gap-1.5 text-xs text-gray-500 hover:text-navy transition-colors">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gladys Damsky -->
+      <div class="bg-white rounded-2xl overflow-hidden card-hover border border-gray-100">
+        <div class="overflow-hidden h-64">
+          <img src="../assets/images/team/team-gladys-damsky.png" alt="Gladys Damsky — Co-Fundadora" class="team-photo h-64" />
+        </div>
+        <div class="p-7">
+          <span class="inline-block bg-sky/20 text-navy text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full mb-3">Co-Fundadora</span>
+          <h3 class="font-heading text-xl font-bold text-navy mb-1">Gladys Damsky</h3>
+          <p class="text-sky text-sm font-semibold mb-3">Estrategia Empresarial · Impacto Social · Emprendimiento</p>
+          <p class="text-gray-500 text-sm leading-relaxed mb-5">
+            Fundadora y CEO de GDamsky Management. Mentora de emprendedores y consultora en proyectos
+            de impacto social. Co-Fundadora y Presidenta de la Comisión de Comercio Exterior de la Cámara
+            Profesional y Empresarial Multisectorial. Mentora en Mentor Day (Islas Canarias, España).
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="mailto:gladys.damsky@zapienz.app" class="flex items-center gap-1.5 text-xs text-gray-500 hover:text-navy transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              Email
+            </a>
+            <a href="https://www.linkedin.com/in/gladysdamsky/" target="_blank" rel="noopener" class="flex items-center gap-1.5 text-xs text-gray-500 hover:text-navy transition-colors">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SUMATE A NOSOTROS -->
+  <section class="bg-navy py-16 px-6 text-white text-center">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="font-heading text-3xl font-bold mb-4">¿Querés trabajar con nosotros?</h2>
+      <p class="text-white/70 mb-8 text-lg">
+        Estamos construyendo el futuro de la IA para niños. Si compartís nuestra misión y querés
+        ser parte de algo significativo, nos encantaría escucharte.
+      </p>
+      <a href="contact.html" class="inline-flex items-center gap-2 bg-brand text-white font-semibold px-8 py-3 rounded-full hover:bg-red-700 transition-colors">
+        Contáctanos
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="bg-navy text-white py-14 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-10 pb-10 border-b border-white/10">
+        <div>
+          <img src="../assets/images/logo.png" alt="Zapienz" class="h-14 w-auto mb-4 brightness-0 invert" />
+          <p class="text-white/60 text-sm leading-relaxed max-w-xs">
+            Zapienz es la primera plataforma de IA diseñada específicamente para niños de 5 a 12 años,
+            con controles parentales en tiempo real y alertas de seguridad.
+          </p>
+        </div>
+        <div>
+          <h5 class="font-heading font-semibold mb-4 text-sm tracking-wider uppercase text-white/50">Navegación</h5>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="index.html"    class="hover:text-white transition-colors">Inicio</a></li>
+            <li><a href="about.html"    class="hover:text-white transition-colors">Nosotros</a></li>
+            <li><a href="features.html" class="hover:text-white transition-colors">Funcionalidades</a></li>
+            <li><a href="team.html"     class="hover:text-white transition-colors">Nuestro Equipo</a></li>
+            <li><a href="contact.html"  class="hover:text-white transition-colors">Contacto</a></li>
+            <li><a href="../team.html"  class="hover:text-white transition-colors text-white/40 text-xs mt-2 block">🌐 English version</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-heading font-semibold mb-4 text-sm tracking-wider uppercase text-white/50">Contacto</h5>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="mailto:info@zapienz.app" class="hover:text-white transition-colors">info@zapienz.app</a></li>
+            <li><span>+54 9 11 6111 2369</span></li>
+            <li><span>Virrey del Pino 2166, C.A.B.A.</span></li>
+            <li><span>Buenos Aires, Argentina</span></li>
+            <li class="pt-2"><a href="https://linkedin.com/in/feradria" target="_blank" rel="noopener" class="hover:text-sky transition-colors">LinkedIn — Adrian Fernandez</a></li>
+            <li><a href="https://www.youtube.com/@ZapienzAI" target="_blank" rel="noopener" class="hover:text-sky transition-colors">YouTube — @ZapienzAI</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-white/40 text-sm">
+        <p>© 2026 Socrates AI. Todos los derechos reservados.</p>
+        <p>Zapienz — Inteligencia artificial para niños.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    menu.querySelectorAll('a').forEach(a => { a.addEventListener('click', () => menu.classList.add('hidden')); });
+  </script>
+</body>
+</html>
