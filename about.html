@@ -26,6 +26,7 @@
       }
     }
   </script>
+  <link rel="icon" type="image/png" href="/assets/images/logo.png" />
   <link rel="alternate" hreflang="en" href="about.html" />
   <link rel="alternate" hreflang="es" href="es/about.html" />
   <style>
@@ -419,7 +420,7 @@
 
     <!-- Seed funding callout -->
     <div class="max-w-xl mx-auto text-center bg-navy text-white rounded-2xl p-8">
-      <p class="font-heading text-4xl font-bold text-sky mb-2">$40,000</p>
+      <p class="font-heading text-4xl font-bold text-sky mb-2">USD $40,000</p>
       <p class="text-white/80">Seed funding from angel investors at <strong class="text-white">Láser Argentina</strong> — validating our vision and market potential.</p>
     </div>
   </section>
@@ -454,7 +455,7 @@
       <div class="grid md:grid-cols-3 gap-10 pb-10 border-b border-white/10">
 
         <div>
-          <img src="assets/images/logo.png" alt="Zapienz" class="h-14 w-auto mb-4 brightness-0 invert" />
+          <img src="assets/images/logo.png" alt="Zapienz" class="h-14 w-auto mb-4" />
           <p class="text-white/60 text-sm leading-relaxed max-w-xs">
             Zapienz is the first AI platform designed specifically for children ages 5–12,
             with real-time parental controls and safety alerts.
@@ -491,3 +492,28 @@
         </div>
 
       </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-white/40 text-sm">
+        <p>© 2026 Socrates AI. All rights reserved.</p>
+        <p>Zapienz — Artificial intelligence for kids.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    menu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => menu.classList.add('hidden'));
+    });
+    document.querySelectorAll('a[href^="\#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+
+</body>
+</html>
