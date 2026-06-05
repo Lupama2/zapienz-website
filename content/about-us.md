@@ -84,7 +84,6 @@ This is our core differentiator. No other application today notifies parents whe
 Zapienz launched its MVP in early 2026 and is currently in early-access testing. Despite being in beta, we have already secured:
 
 - **Schools** signing up as institutional partners
-- **Telecentro** — one of Argentina's leading cable and internet providers — as a distribution and deployment partner
 - **The Ministry of Education of Buenos Aires** — validating our approach at the institutional level
 - **$40,000 in seed funding** from angel investors at Láser Argentina
 
