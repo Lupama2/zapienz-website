@@ -1,6 +1,6 @@
 # Zapienz Website — Instructions for Claude Code
 
-You are building the public website for **Zapienz** by **Socrates AI**.
+You are building the public website for **Zapienz** by **Zapienz AI S.A.S.**.
 Read `README.md` for the full spec. This file gives you the quick-start directives.
 
 ## Your Job
@@ -67,7 +67,7 @@ Logo | Home  About  Features  Team  Contact  [Contact Us button]
 ## Shared Footer (every page)
 
 ```
-Logo + tagline | Nav links | Contact info | © 2025 Socrates AI
+Logo + tagline | Nav links | Contact info | Zapienz AI S.A.S.
 ```
 
 ## Key Sections — index.html

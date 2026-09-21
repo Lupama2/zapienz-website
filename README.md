@@ -1,6 +1,6 @@
 # Zapienz — Company Website.
 
-**Company:** Socrates AI | **Product:** Zapienz — Artificial intelligence for kids  
+**Company:** Zapienz AI S.A.S. | **Product:** Zapienz — Artificial intelligence for kids  
 **Website domain:** `https://www.zapienz.app`  
 **Deploy target:** Netlify (connected to this GitHub repo)  
 **Contact email:** info@zapienz.app

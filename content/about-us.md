@@ -1,10 +1,10 @@
-# About Us — Zapienz by Socrates AI
+# About Us — Zapienz AI S.A.S.
 
 ---
 
 ## Company Overview
 
-**Socrates AI** is an Argentine technology startup founded in 2026, headquartered in Buenos Aires, Argentina. We are the company behind **Zapienz** — the first AI platform designed specifically for children ages 5 to 12, with a focus on safe exploration, education, and robust parental control.
+**Zapienz AI S.A.S.** is an Argentine technology startup founded in 2026, headquartered in Buenos Aires, Argentina. We are the company behind **Zapienz** — the first AI platform designed specifically for children ages 5 to 12, with a focus on safe exploration, education, and robust parental control.
 
 We stand at the intersection of education, technology, parenting, and ethics. While children are already using AI — whether anyone teaches them or not — parents don't know how to guide that process, schools are lagging behind, and governments are still catching up. Zapienz was built to fill that gap.
 
@@ -178,4 +178,4 @@ Founder & CEO at GDamsky Management. Mentor for entrepreneurs and consultant on 
 ---
 
 *Zapienz — Artificial intelligence for kids.*
-*© 2025 Socrates AI. All rights reserved.*
+*Zapienz AI S.A.S.*
